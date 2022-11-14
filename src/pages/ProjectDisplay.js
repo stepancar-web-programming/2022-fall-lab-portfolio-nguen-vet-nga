@@ -20,7 +20,7 @@ function ProjectDisplay() {
             <p>
                 <b>Skills:</b> {project.skills}
             </p>
-            <a href={project.link} target="_blank">
+            <a href={project.link} target="_blank" rel="noreferrer">
                 <GitHubIcon className="cursor" />
             </a>
         </div >
