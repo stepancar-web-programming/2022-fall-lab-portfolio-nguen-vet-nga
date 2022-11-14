@@ -37,10 +37,10 @@ function Home() {
                             <div style={{ padding: 50, textAlign: "left" }}>
                                 <h3>
                                     <span>always be</span>
-                                    <div class="message">
-                                        <div class="word1">practice</div>
-                                        <div class="word2">code</div>
-                                        <div class="word3">creating</div>
+                                    <div className="message">
+                                        <div className="word1">practice</div>
+                                        <div className="word2">code</div>
+                                        <div className="word3">creating</div>
                                     </div>
                                 </h3>
                             </div>
@@ -65,7 +65,7 @@ function Home() {
                                 BRIEFLY ABOUT ME
                             </h1>
                             <p className="home-about-body">
-                                I come from <b className="light-yellow">Vietnam</b>. <span class="fi fi-vn"></span>
+                                I come from <b className="light-yellow">Vietnam</b>. <span className="fi fi-vn"></span>
                                 <br />
                                 <br />
                                 I am majoring in <b className="light-yellow">software engineering</b> at <b className="light-yellow">ITMO University</b>.

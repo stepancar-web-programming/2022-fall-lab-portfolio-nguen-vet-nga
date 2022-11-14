@@ -177,13 +177,13 @@ ul {
 
 
 #react-web {
-    border: 0.2rem solid #444857;
+    border: 0.2rem solid #deff06;
     border-radius: 0.25rem;
     height: 2.75rem;
     width: 3.5rem;
     line-height: 2.5rem;
     font-size: 1.2rem;
-    color: #ADAFBC;
+    color: #acfb36;
     background-color: transparent;
     transition: transform 50ms;
 }
@@ -198,16 +198,19 @@ ul {
 }
 
 .small {
-    font-size: 1.4rem;
-    color: #F19994;
+    font-size: 1.4rem !important;
+    color: #F19994 !important;
+    background-color: #904388 !important;
 }
 
 .medium {
-    font-size: 1.6rem;
-    color: #FF8484;
+    font-size: 1.6rem !important;
+    color: #FF8484 !important;
+    background-color: #bc2fae !important;
 }
 
 .large {
-    font-size: 1.8rem;
-    color: #FF3C41;
+    font-size: 1.8rem !important;
+    color: #FF3C41 !important;
+    background-color: #ff00e6 !important;
 }
