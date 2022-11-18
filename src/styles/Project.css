@@ -87,6 +87,17 @@ h1 {
     font-size: 25px;
 }
 
+@media only screen and (max-width: 960px) {
+    .projectList {
+        width: 70vw;
+        margin-top: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+    }
+
+}
+
 @media only screen and (max-width: 1300px) {
     .projectList {
         grid-template-columns: 1fr 1fr;

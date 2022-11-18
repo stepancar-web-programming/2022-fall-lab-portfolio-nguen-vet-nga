@@ -102,6 +102,10 @@ h1 .type2 {
     .skills h2 {
         font-size: 30px;
     }
+
+    .home-header {
+        font-size: 14px;
+    }
 }
 
 h3 {
@@ -247,6 +251,7 @@ h3 span {
 .myAvtar {
     justify-content: center !important;
     padding-top: 9em !important;
+    text-align: center;
 }
 
 .myAvtar .circle-border {
