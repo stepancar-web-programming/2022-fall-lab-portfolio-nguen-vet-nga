@@ -1,27 +1,25 @@
-import './App.css';
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from './pages/Home';
-import Skills from './pages/Skills';
-import Projects from './pages/Projects';
-import Experience from './pages/Experience';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Preloader from './components/PreLoader';
-import ProjectDisplay from './pages/ProjectDisplay';
+import './App.css'
+import React, { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Skills from './pages/Skills'
+import Projects from './pages/Projects'
+import Experience from './pages/Experience'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Preloader from './components/PreLoader'
+import ProjectDisplay from './pages/ProjectDisplay'
 
-
-function App() {
-  const [load, upadateLoad] = useState(true);
+function App () {
+  const [load, upadateLoad] = useState(true)
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
+      upadateLoad(false)
+    }, 1200)
 
-    return () => clearTimeout(timer);
-  }, []);
-
+    return () => clearTimeout(timer)
+  }, [])
 
   return (
     <div className="App">
@@ -40,7 +38,7 @@ function App() {
 
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
