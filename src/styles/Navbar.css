@@ -1,0 +1,216 @@
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+}
+
+.NavbarItems {
+    background: linear-gradient(90deg, #32eaea 0%, #1759f2 100%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.navbar-logo {
+    justify-self: start;
+    margin-left: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.navbar-logo img {
+    max-width: 200px;
+    height: 100%;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+ul {
+    margin-bottom: 0 !important;
+}
+
+.nav-links {
+    font-weight: 700;
+    background-image: linear-gradient(to right,
+            #3409d0,
+            #3409d0 50%,
+            #fff 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    position: relative;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.active-link {
+    background-position: 0;
+}
+
+.nav-links:before {
+    content: '';
+    background: #3db3f8;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links:hover {
+    background-position: -1;
+}
+
+.nav-links:hover::before {
+    width: 100%;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .NavbarItems {
+        position: relative;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 0.8;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        background: #3debf8;
+        left: 0;
+        opacity: 0.8;
+        transition: all 0.5 ease;
+        z-index: 1;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover {
+        background-color: #3debf8;
+        border-radius: 0;
+    }
+
+    .nav-links-reponsive::before {
+        position: absolute;
+        content: "";
+        background: rgb(53, 72, 198);
+        transition-duration: 0.3s;
+        z-index: -1;
+        inset: 0px 0px auto auto;
+        width: 0px;
+        height: 100%;
+        opacity: 0.8;
+    }
+
+
+    .nav-links-reponsive:hover::before {
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        background: #3409d0;
+    }
+
+
+    .nav-links-reponsive:hover {
+        transition: color 0.3s ease 0s, #20dddd 0s ease 0.3s;
+    }
+
+    .navbar-logo {
+        position: absolute;
+        align-items: center;
+    }
+
+    .nav-links:hover {
+        color: #3409d0;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .NavbarItems {
+        background: #20dddd;
+    }
+
+    #react-web {
+        display: none;
+    }
+}
+
+
+#react-web {
+    border: 0.2rem solid #deff06;
+    border-radius: 0.25rem;
+    height: 2.75rem;
+    width: 3.5rem;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    color: #acfb36;
+    background-color: transparent;
+    transition: transform 50ms;
+}
+
+#react-web:hover {
+    background-color: #b02fa3;
+    color: #FF3C41;
+}
+
+#react-web:active {
+    transform: translateY(0.1rem);
+}
+
+.small {
+    font-size: 1.4rem !important;
+    color: #F19994 !important;
+    background-color: #904388 !important;
+}
+
+.medium {
+    font-size: 1.6rem !important;
+    color: #FF8484 !important;
+    background-color: #bc2fae !important;
+}
+
+.large {
+    font-size: 1.8rem !important;
+    color: #FF3C41 !important;
+    background-color: #ff00e6 !important;
+}
